@@ -1,7 +1,7 @@
 // getting the player's name
 
-let namePlayer1 = window.prompt('Please! Enter your player name player 1 ')
-let namePlayer2 = window.prompt('Please! Enter your player name player 2 ')
+let namePlayer1 = window.prompt('Please! Enter your name, player 1 ')
+let namePlayer2 = window.prompt('Please! Enter your name, player 2 ')
 
 
 // Checking if the user has digited something 

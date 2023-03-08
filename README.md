@@ -1,2 +1,2 @@
 # Dice-Game
-It's my first game
+This is my first game

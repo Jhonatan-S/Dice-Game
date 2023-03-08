@@ -17,7 +17,7 @@ if (namePlayer1.length > 0 && namePlayer2.length > 0) {
 // creating a function to roll the dice
 
 function roll() {
-    document.querySelector('.container .result h2').style.visibility = 'hidden'
+    document.querySelector('.container .btn_roll h2').style.visibility = 'hidden'
     document.querySelectorAll('h3')[0].style.visibility = 'hidden'
     document.querySelectorAll('h3')[1].style.visibility = 'hidden'
 
@@ -68,7 +68,6 @@ function roll() {
     }
     // if player1 number is equals player2 number. Draw
     else if (randomNumber1 == randomNumber2) {
-        document.querySelector('.container .result h2').style.visibility = 'visible'
+        document.querySelector('.container .btn_roll h2').style.visibility = 'visible'
     }
 }
-

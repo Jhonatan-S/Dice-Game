@@ -38,8 +38,8 @@
     visibility: hidden;
 }
 
-.container > .result > h2 {
-    margin-top: 30px;
+.container > .btn_roll > h2 {
+    margin: 30px 0;
     color: #ff0000;
     visibility: hidden;
 
@@ -66,15 +66,6 @@
 .container > .btn_roll > button:active {
     box-shadow: 0 0 0 0 #000, inset 3px 3px 3px #000;
     transform: translate(3px, 3px);
-}
-
-@keyframes sacle {
-   0% {
-        transform: scale(1);
-   }
-   100% {
-        transform: scale(2);
-   }
 }
 
 footer{

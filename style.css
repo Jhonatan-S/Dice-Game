@@ -27,6 +27,7 @@
 .container > .dice > h2 {
     font-size: 2rem;
     color: #02234e;
+    margin-bottom: 10px;
 }
 
 .container > .dice > img {

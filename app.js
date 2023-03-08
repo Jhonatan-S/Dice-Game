@@ -14,13 +14,14 @@ if (namePlayer1.length > 0 && namePlayer2.length > 0) {
 }
 
 
+// creating a function to roll the dice
 
 function roll() {
     document.querySelector('.container .result h2').style.visibility = 'hidden'
     document.querySelectorAll('h3')[0].style.visibility = 'hidden'
     document.querySelectorAll('h3')[1].style.visibility = 'hidden'
 
-    // play 1 image
+    // Getting a radoom side dice - player1
 
     let randomNumber1 = Math.floor(Math.random() * 6 + 1)
 
@@ -31,7 +32,7 @@ function roll() {
     let image1 = document.querySelectorAll("img")[0].setAttribute("src", randomImageSource1)
 
 
-    // Play 2 image
+    // Getting a radoom side dice - player2
 
     let randomNumber2 = Math.floor(Math.random() * 6 + 1)
 
@@ -43,26 +44,30 @@ function roll() {
 
     // Condition winner
 
+    // if player1 number is greater than player2 number. Player1 won
+
     if (randomNumber1 > randomNumber2) {
 
         document.querySelectorAll('h3')[0].style.color = 'green'
         document.querySelectorAll('h3')[0].style.visibility = 'visible'
-        document.querySelectorAll('h3')[0].innerHTML = 'You win'
+        document.querySelectorAll('h3')[0].innerHTML = 'You have won'
         document.querySelectorAll('h3')[1].style.color = 'red'
-        document.querySelectorAll('h3')[1].innerHTML = 'You lose'
+        document.querySelectorAll('h3')[1].innerHTML = 'You have lost'
         document.querySelectorAll('h3')[1].style.visibility = 'visible'
 
     }
+    // if player2 number is greater than player1 number. Player2 won
     else if (randomNumber2 > randomNumber1) {
 
         document.querySelectorAll('h3')[1].style.color = 'green'
         document.querySelectorAll('h3')[1].style.visibility = 'visible'
-        document.querySelectorAll('h3')[1].innerHTML = 'You win'
+        document.querySelectorAll('h3')[1].innerHTML = 'You have won'
         document.querySelectorAll('h3')[0].style.color = 'red'
-        document.querySelectorAll('h3')[0].innerHTML = 'You lose'
+        document.querySelectorAll('h3')[0].innerHTML = 'You have lost'
         document.querySelectorAll('h3')[0].style.visibility = 'visible'
     }
-    else if (randomNumber2 == randomNumber1) {
+    // if player1 number is equals player2 number. Draw
+    else if (randomNumber1 == randomNumber2) {
         document.querySelector('.container .result h2').style.visibility = 'visible'
     }
 }

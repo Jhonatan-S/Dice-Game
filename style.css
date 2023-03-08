@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    background-color: #87ade9;
+    color: #fff;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.container > .dice {
+    display: inline-block;
+}
+
+.container > h1 {
+    margin: 30px;
+    font-family: 'lobster', cursive;
+    text-shadow: 4px 4px #232931;
+    font-size: 8rem;
+}
+
+.container > .dice > h2 {
+    font-size: 2rem;
+    color: #02234e;
+}
+
+.container > .dice > img {
+    width: 80%;
+}
+
+.container > .dice > h3 {
+    visibility: hidden;
+}
+
+.container > .result > h2 {
+    margin-top: 30px;
+    color: #ff0000;
+    visibility: hidden;
+
+}
+.container > .btn_roll{
+    margin: 30px;
+}
+.container > .btn_roll button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    background: radial-gradient(closest-side at 50% 30%, #064fc6, #03265d);
+    box-shadow: 2px 2px 0px 1px #000;
+}
+
+.container > .btn_roll > button:hover{
+    background: radial-gradient(closest-side at 50% 30%, #033e9b, #02255d);
+}
+
+.container > .btn_roll > button:active {
+    box-shadow: 0 0 0 0 #000, inset 3px 3px 3px #000;
+    transform: translate(3px, 3px);
+}
+
+@keyframes sacle {
+   0% {
+        transform: scale(1);
+   }
+   100% {
+        transform: scale(2);
+   }
+}
+
+footer{
+    text-align: center;
+    color: #eee;
+}

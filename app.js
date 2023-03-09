@@ -7,7 +7,7 @@ let namePlayer2 = window.prompt('Please! Enter your name, player 2 ')
 // Checking if the user has digited something 
 
 if (namePlayer1.length > 0 && namePlayer2.length > 0) {
-    // Writing the player's name in the html
+    // Replace the player's name in the html
     document.querySelectorAll('.container  .dice  h2')[0].innerHTML = namePlayer1
 
     document.querySelectorAll('.container  .dice  h2')[1].innerHTML = namePlayer2

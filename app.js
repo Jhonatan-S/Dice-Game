@@ -50,9 +50,9 @@ function roll() {
 
         document.querySelectorAll('h3')[0].style.color = 'green'
         document.querySelectorAll('h3')[0].style.visibility = 'visible'
-        document.querySelectorAll('h3')[0].innerHTML = 'You have won'
+        document.querySelectorAll('h3')[0].innerHTML = namePlayer1 + ' has won'
         document.querySelectorAll('h3')[1].style.color = 'red'
-        document.querySelectorAll('h3')[1].innerHTML = 'You have lost'
+        document.querySelectorAll('h3')[1].innerHTML = namePlayer2 + ' has lost'
         document.querySelectorAll('h3')[1].style.visibility = 'visible'
 
     }
@@ -61,9 +61,9 @@ function roll() {
 
         document.querySelectorAll('h3')[1].style.color = 'green'
         document.querySelectorAll('h3')[1].style.visibility = 'visible'
-        document.querySelectorAll('h3')[1].innerHTML = 'You have won'
+        document.querySelectorAll('h3')[1].innerHTML = namePlayer2 + ' has won'
         document.querySelectorAll('h3')[0].style.color = 'red'
-        document.querySelectorAll('h3')[0].innerHTML = 'You have lost'
+        document.querySelectorAll('h3')[0].innerHTML = namePlayer1 + ' has lost'
         document.querySelectorAll('h3')[0].style.visibility = 'visible'
     }
     // if player1 number is equals player2 number. Draw
